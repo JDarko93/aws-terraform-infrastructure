@@ -48,7 +48,7 @@ data "aws_availability_zones" "available" {
 
 # VPC Module
 module "vpc" {
-  source = "aws-terraform-infrastructure/terraform/modules/vpc"
+  source = "../../modules/vpc"
 
   vpc_cidr                 = var.vpc_cidr
   environment              = var.environment
