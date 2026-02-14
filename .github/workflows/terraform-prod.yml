@@ -24,7 +24,7 @@ jobs:
   terraform:
     name: 'Terraform Plan/Apply - Prod'
     runs-on: ubuntu-latest
-    environment: production # Requires approval for production
+    environment: prod
     defaults:
       run:
         working-directory: terraform/environments/prod
