@@ -8,9 +8,7 @@ terraform {
     }
   }
 
-  backend "s3" {
-    # Configuration in backend.tf
-  }
+
 }
 
 provider "aws" {
