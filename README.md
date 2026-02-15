@@ -1,2 +1,1 @@
-# aws-terraform-infrastructure
-AWS Multi-Tier Infrastructure using Terraform
+# AWS Multi-Tier Infrastructure using Terraform
