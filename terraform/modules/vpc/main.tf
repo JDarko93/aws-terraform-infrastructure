@@ -130,7 +130,7 @@ resource "aws_route_table" "private_app" {
 
 # Private Route Table Association (app subnets)
 resource "aws_route_table_association" "private_app" {
-  count          = length(var.private_app_subnet_cidrs)
+  count          = var.enable_nat_gateway ? length(var.private_app_subnet_cidrs) : 0
   subnet_id      = aws_subnet.private_app[count.index].id
   route_table_id = aws_route_table.private_app[var.single_nat_gateway ? 0 : count.index].id
 }
