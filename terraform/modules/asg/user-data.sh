@@ -50,7 +50,7 @@ const pool = new Pool({
   database: process.env.DB_NAME,
   user: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
-  port: 5432,
+  db_port: 5432,
 });
 
 // Health check endpoint
