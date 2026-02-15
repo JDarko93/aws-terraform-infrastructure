@@ -114,3 +114,9 @@ variable "alert_email" {
   description = "Email address for CloudWatch alerts"
   type        = string
 }
+
+variable "db_port" {
+  description = "Port number that will be used"
+  type = number
+  default = 5432
+}

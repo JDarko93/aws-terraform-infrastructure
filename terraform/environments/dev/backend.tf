@@ -3,13 +3,13 @@
 # Uncomment and configure after creating S3 bucket and DynamoDB table
 
 terraform {
-    backend "s3" {
+  backend "s3" {
     bucket         = "aws-infra-project-2026"
     key            = "dev/terraform.tfstate"
     region         = "eu-west-2"
     encrypt        = true
     dynamodb_table = "terraform-state-lock"
-    }
+  }
 }
 
 # To create the S3 bucket and DynamoDB table, run:

@@ -83,3 +83,9 @@ variable "user_data" {
   type        = string
   default     = ""
 }
+
+variable "db_port" {
+  description = "Port number that will be used"
+  type = number
+  default = 5432
+}
