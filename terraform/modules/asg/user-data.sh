@@ -87,8 +87,8 @@ pool.query('SELECT 1')
   .catch(err => console.error('Database connection error:', err));
 
 app.listen(port, '0.0.0.0', () => {
-  console.log(`App running on port ${port}`);
-  console.log(`Environment: ${process.env.ENVIRONMENT}`);
+  console.log(`App running on port $${port}`);
+  console.log(`Environment: $${process.env.ENVIRONMENT}`);
 });
 APPJS
 
