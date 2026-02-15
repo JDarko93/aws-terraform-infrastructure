@@ -83,3 +83,8 @@ variable "user_data" {
   type        = string
   default     = ""
 }
+
+variable "db_port" {
+  description = "The port the database is listening on"
+  type        = number
+}
