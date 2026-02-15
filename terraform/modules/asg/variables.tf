@@ -84,7 +84,7 @@ variable "user_data" {
   default     = ""
 }
 
-variable "db_port" {
+variable "port" {
   description = "Port number that will be used"
   type = number
   default = 5432

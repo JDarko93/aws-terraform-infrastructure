@@ -120,7 +120,7 @@ module "asg" {
   db_name                   = var.db_name
   db_username               = var.db_username
   db_password               = var.db_password
-  db_port                   = var.db_port
+  port                   = var.port
 
   depends_on = [module.rds]
 }
