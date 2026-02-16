@@ -33,3 +33,9 @@ output "autoscaling_group_name" {
   description = "Auto Scaling Group name"
   value       = module.asg.autoscaling_group_name
 }
+
+
+output "target_group_arn" {
+  description = "Target group ARN"
+  value = module.alb.target_group_arn
+}
