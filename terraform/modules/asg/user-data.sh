@@ -42,7 +42,7 @@ const { Pool } = require('pg');
 const os = require('os');
 
 const app = express();
-const port = 3000;
+const port = 5432;
 
 // Database connection
 const pool = new Pool({
