@@ -18,7 +18,7 @@ resource "aws_lb" "main" {
 # Target Group
 resource "aws_lb_target_group" "app" {
   name     = "${var.environment}-app-tg"
-  port     = 80
+  port     = 3000
   protocol = "HTTP"
   vpc_id   = var.vpc_id
 
