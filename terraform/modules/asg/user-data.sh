@@ -122,7 +122,7 @@ Environment=DB_ENDPOINT=${db_endpoint}
 Environment=DB_NAME=${db_name}
 Environment=DB_USERNAME=${db_username}
 Environment=DB_PASSWORD=${db_password}
-Environment=DB_PORT=${db_port}
+Environment=DB_PORT=${port}
 ExecStart=/usr/bin/node app.js
 Restart=always
 RestartSec=10
