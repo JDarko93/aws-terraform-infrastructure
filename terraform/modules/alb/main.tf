@@ -30,7 +30,7 @@ resource "aws_lb_target_group" "app" {
     interval            = var.health_check_interval
     path                = var.health_check_path
     protocol            = "HTTP"
-    port = "3000"
+    port                = "3000"
     matcher             = "200"
   }
 
