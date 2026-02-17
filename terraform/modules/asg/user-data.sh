@@ -58,7 +58,7 @@ const pool = new Pool({
   database: process.env.DB_NAME,
   user: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT || 5432,
+  port: process.env.PORT || 5432,
   connectionTimeoutMillis: 5000,
 });
 
@@ -122,7 +122,7 @@ Environment=DB_ENDPOINT=${db_endpoint}
 Environment=DB_NAME=${db_name}
 Environment=DB_USERNAME=${db_username}
 Environment=DB_PASSWORD=${db_password}
-Environment=DB_PORT=${port}
+Environment=PORT=${port}
 ExecStart=/usr/bin/node app.js
 Restart=always
 RestartSec=10
