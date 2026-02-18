@@ -115,8 +115,8 @@ variable "alert_email" {
   type        = string
 }
 
-variable "port" {
-  description = "Port number that will be used"
+variable "db_port" {
+  description = "Port number that will be used for Database"
   type        = number
-  default     = 3000
+  default     = 5432
 }
