@@ -158,7 +158,7 @@ resource "aws_cloudwatch_dashboard" "main" {
           ]
           period = 300
           stat   = "Sum"
-          region = "us-east-1"
+          region = "eu-west-2"
           title  = "ALB Request Metrics"
         }
       },
@@ -170,7 +170,7 @@ resource "aws_cloudwatch_dashboard" "main" {
           ]
           period = 300
           stat   = "Average"
-          region = "us-east-1"
+          region = "eu-west-2"
           title  = "EC2 CPU Utilization"
         }
       },
@@ -183,7 +183,7 @@ resource "aws_cloudwatch_dashboard" "main" {
           ]
           period = 300
           stat   = "Average"
-          region = "us-east-1"
+          region = "eu-west-2"
           title  = "RDS Metrics"
         }
       }
