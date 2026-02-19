@@ -58,6 +58,9 @@ const pool = new Pool({
   password: process.env.DB_PASSWORD,
   port: parseInt(process.env.DB_PORT) || 5432,
   connectionTimeoutMillis: 5000,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 app.get('/health', (req, res) => {
