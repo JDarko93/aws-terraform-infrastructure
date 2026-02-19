@@ -1,4 +1,3 @@
-cat > terraform/modules/asg/user-data.sh << 'EOF'
 #!/bin/bash
 
 # Redirect all output to log file
@@ -143,4 +142,3 @@ echo "=== Testing health endpoint ==="
 curl -s http://localhost:3000/health || echo "Health check FAILED"
 
 echo "=== User data script completed at $(date) ==="
-EOF
