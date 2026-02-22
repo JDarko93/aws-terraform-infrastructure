@@ -18,3 +18,6 @@ Thumbs.db
 # Application
 node_modules/
 *.log
+
+# Exception
+!dev.tfvars
