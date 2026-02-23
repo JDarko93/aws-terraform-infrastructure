@@ -37,5 +37,5 @@ output "autoscaling_group_name" {
 
 output "target_group_arn" {
   description = "Target group ARN"
-  value = module.alb.target_group_arn
+  value       = module.alb.target_group_arn
 }
