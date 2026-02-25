@@ -4,11 +4,13 @@ on:
       - develop
     paths:
       - 'terraform/**'
+      - '.github/workflows/**'
   pull_request:
     branches:
       - develop
     paths:
       - 'terraform/**'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 env:
