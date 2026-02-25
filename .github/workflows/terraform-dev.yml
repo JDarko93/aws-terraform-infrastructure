@@ -92,7 +92,7 @@ jobs:
             })
 
       - name: Terraform Apply
-        if: github.ref == 'refs/heads/develop' && github.event_name == 'push'
+        if: github.ref == 'refs/heads/develop' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
         run: terraform apply -auto-approve tfplan
         env:
           TF_VAR_db_password: ${{ secrets.DEV_DB_PASSWORD }}
